@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".activities.InviteFriendScreenActivity.InviteFriendScreenActivity">
+<ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/invitevector"
+    android:layout_gravity="center"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share the love by inviting your friends"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share your code"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:id="@+id/linshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="vho WIH"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/roboto_bold"
+            android:drawableRight="@drawable/ic_baseline_insert_link_24"
+            android:background="@drawable/roundcornerstrokezero"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_insert_link_24"
+            android:background="@color/appcolor"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

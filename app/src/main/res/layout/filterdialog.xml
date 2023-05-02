@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toproundcorner"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Filter"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:padding="5dp"
+            android:src="@drawable/mark"
+            app:tint="@color/appcolor" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Distance"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/moreroundcornerstroketransparent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerdistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/moreroundcornerstroke2"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvmale"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:text="Male"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvfemale"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.33"
+            android:text="Female"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/zeroroundcornerstrokewhite"
+            />
+        <TextView
+            android:id="@+id/tvshemale"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.34"
+            android:text="Shemale"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Age"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <com.mohammedalaa.seekbar.DoubleValueSeekBarView
+        android:id="@+id/double_range_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:r2CurrentMaxValue="100"
+        app:r2CurrentMinValue="30"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        app:r2barHeight="2dp"
+        app:r2baseColor="@color/lightgrey"
+        app:r2circleFillColor="@color/appcolor"
+        app:r2circleRadius="10dp"
+        app:r2circleTextColor="@color/white"
+        app:r2circleTextSize="10sp"
+        app:r2fillColor="@color/appcolor"
+        app:r2maxValue="150"
+        app:r2maxValueStep="10"
+        app:r2minValue="15"
+        app:r2minValueStep="5" />
+
+
+
+</LinearLayout>

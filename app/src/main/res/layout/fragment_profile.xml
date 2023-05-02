@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.ProfileFragment.ProfileFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/bgmain"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_stack_view"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="100dp">
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rock" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgselectimage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="-22dp"
+            android:layout_marginTop="-30dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:padding="5dp"
+            app:tint="@color/black"
+            android:background="@drawable/circledrawable"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenny,22"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="20sp"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"/>
+        <TextView
+            android:id="@+id/tvprofileedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/skyblue"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:background="@drawable/lessroundcornerstroke"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenny"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:background="@drawable/lessroundcornerstroke"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:id="@+id/tvphnnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91 9876443210"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:background="@drawable/lessroundcornerstroke"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:id="@+id/tvdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02-05-1997"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/grey"
+            android:maxLength="10"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvplansetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Settings"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"/>
+    <LinearLayout
+        android:id="@+id/linplansetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:background="@drawable/lessroundcornerstroke"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Plan"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/skyblue"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discovery Settings"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:background="@drawable/lessroundcornerstroke"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"/>
+        <TextView
+            android:id="@+id/tvmycurrentlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Current location"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/skyblue"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prefered Languages"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:textColor="@color/skyblue"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linshowme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Me"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+                <TextView
+                    android:id="@+id/tvshowmeselected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Men"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:textColor="@color/skyblue"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linnotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notification"
+                    android:drawableRight="@drawable/ic_baseline_notifications_active_24"
+
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linrecentpasses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Passes"
+                    android:drawableRight="@drawable/ic_baseline_privacy_tip_24"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lininvitefriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Refer friend"
+                    android:drawableRight="@drawable/ic_baseline_insert_invitation_24"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linrecommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommendation"
+                    android:drawableRight="@drawable/ic_baseline_star_24"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Help and support"
+                    android:drawableRight="@drawable/ic_baseline_help_24"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"/>
+            </LinearLayout>
+
+
+
+
+
+            <!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginHorizontal="15dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:background="@drawable/lessroundcornerstroke"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Age Ranges"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:fontFamily="@font/roboto_regular"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="22-34"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="end"-->
+<!--                    android:textColor="@color/skyblue"-->
+<!--                    android:fontFamily="@font/roboto_bold"-->
+<!--                    android:textSize="16sp"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginHorizontal="15dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:background="@drawable/lessroundcornerstroke"-->
+<!--                android:orientation="horizontal">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Maximum Distance"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:fontFamily="@font/roboto_regular"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="100Km."-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="end"-->
+<!--                    android:textColor="@color/skyblue"-->
+<!--                    android:fontFamily="@font/roboto_bold"-->
+<!--                    android:textSize="16sp"/>-->
+<!--            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/grey"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginTop="25dp"/>
+
+            <LinearLayout
+                android:id="@+id/linlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/lessroundcornerstroke"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Videocallactivity.Videocallactivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rock"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rock" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ccp_ic_arrow_drop_down"
+        android:layout_marginTop="25dp"
+        app:tint="@color/black" />
+    <ImageView
+        android:id="@+id/imgvc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_videocam_24"
+        android:background="@drawable/circledrawable"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/light_gray"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        app:tint="@color/black" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/imgvc"
+        android:background="@drawable/circledrawable"
+        android:src="@drawable/baseline_menu_24"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/light_gray"
+        app:tint="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/circledrawable"
+            android:backgroundTint="@color/red">
+
+            <ImageView
+                android:id="@+id/img_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/cameraswitch"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_retry"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/circledrawable"
+            android:backgroundTint="@color/appcolor">
+
+
+            <ImageView
+                android:id="@+id/img_retry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/keyboard" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lin_trends"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/circledrawable"
+            android:backgroundTint="@color/appcolor">
+
+
+            <ImageView
+                android:id="@+id/img_trends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_favorites"
+                app:tint="@color/white"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</LinearLayout>

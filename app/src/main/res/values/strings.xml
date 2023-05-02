@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Marier</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms"><u>Terms</u>.</string>
+    <string name="privacy"><u>Privacy</u>.</string>
+    <string name="policy"><u>Policy</u>.</string>
+    <string name="cookiespolicy"><u>Cookies Policy</u>.</string>
+    <string name="bigtextcookiespolicy">By clicking Log In,you agree with our terms. Learn how process your data in our Privacy Policy and cookies policy.Learn how <u> process your data in our privacy policy and Cookies</u>.</string>
+    <string-array name="Languages">
+        <item>Gender</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="distancerange">
+        <item>1-10km</item>
+        <item>10-20km</item>
+        <item>30-40km</item>
+        <item>40-50km</item>
+    </string-array>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

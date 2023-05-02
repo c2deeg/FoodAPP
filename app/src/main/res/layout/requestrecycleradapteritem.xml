@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="15dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rock"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anika"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/cross"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            app:tint="@color/grey"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/circledrawable"
+            android:backgroundTint="@color/light_gray"/>
+        <ImageView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/mark"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            app:tint="@color/appcolor"
+            android:background="@drawable/circledrawable"
+            android:backgroundTint="@color/light_gray"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

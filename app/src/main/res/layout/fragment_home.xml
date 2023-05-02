@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="start">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/menssss"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="end">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:src="@drawable/mmlogo" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linfilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="end">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:src="@drawable/filters" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:id="@+id/card_stack_view"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/imgquit"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/quit"
+                android:visibility="gone" />
+            <ImageView
+                    android:id="@+id/imglike"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="60dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/heartone"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="90dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:rotation="-5">
+
+                <LinearLayout
+                    android:id="@+id/linsendmessage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circledrawable"
+                    android:backgroundTint="@color/white">
+
+                    <ImageView
+                        android:id="@+id/img_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/blabla"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linlikes"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/circledrawable"
+                    android:backgroundTint="@color/red">
+
+
+                    <ImageView
+                        android:id="@+id/img_trends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_favorites"
+                        app:tint="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/linexit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/circledrawable"
+                android:backgroundTint="#6A6A6A">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cross"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:src="@drawable/ic_baseline_more_horiz_24"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/linlike"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/circledrawable"
+                android:backgroundTint="@color/red">
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_favorites"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

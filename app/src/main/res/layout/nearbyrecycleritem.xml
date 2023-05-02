@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/list_item_map_view_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Rohit 3%"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="22sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Chandigarh"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_trends"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:layout_margin="20dp"
+                android:background="@drawable/circledrawable"
+                android:backgroundTint="@color/appcolor">
+
+
+                <ImageView
+                    android:id="@+id/img_trends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_favorites"
+                    app:tint="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:background="@drawable/circledrawable"
+                android:backgroundTint="@color/red">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</merge>

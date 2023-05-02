@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.EnterotpFragment.EnterotpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My code is"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginLeft="-20dp"/>
+    </LinearLayout>
+
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otpview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:height="40dp"
+        app:width="50dp"
+        app:otp_box_background="@drawable/linedrawable"
+        android:layout_gravity="center"
+        app:bar_enabled="false"
+        app:bar_height="2dp"
+        app:length="4"
+        app:box_margin_left="20dp"
+        android:fontFamily="@font/poppins_regular"
+        app:otp_text_size="24dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESEND"
+        android:textColor="@color/grey"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_regular"/>
+    <TextView
+        android:id="@+id/tvcontinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="@color/appcolor"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

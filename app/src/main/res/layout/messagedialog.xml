@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="25dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/blabla"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Invite"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUY INVITES"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:background="@drawable/lessroundcorner"
+                android:fontFamily="@font/roboto_medium"
+                android:backgroundTint="@color/appcolor"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/menssss"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send a private message \n invites grab the most attention"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ECE8E8"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/zeroroundcorner"
+        android:backgroundTint="#CDCBCB"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/etmsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+           android:textSize="14sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/imgsend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:padding="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/ic_baseline_send_24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

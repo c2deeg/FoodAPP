@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginnavigationgraph"
+    app:startDestination="@id/onBoardSplashFragment">
+
+    <fragment
+        android:id="@+id/onBoardSplashFragment"
+        android:name="com.app.marier.fragments.OnBoardSplashFragment.OnBoardSplashFragment"
+        android:label="fragment_on_board_splash"
+        tools:layout="@layout/fragment_on_board_splash" >
+        <action
+            android:id="@+id/action_onBoardSplashFragment_to_myPhoneNumberFragment"
+            app:destination="@id/myPhoneNumberFragment" />
+        <action
+            android:id="@+id/action_onBoardSplashFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPhoneNumberFragment"
+        android:name="com.app.marier.fragments.MyPhoneNumberFragment.MyPhoneNumberFragment"
+        android:label="fragment_my_phone_number"
+        tools:layout="@layout/fragment_my_phone_number" >
+        <action
+            android:id="@+id/action_myPhoneNumberFragment_to_enterotpFragment"
+            app:destination="@id/enterotpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterotpFragment"
+        android:name="com.app.marier.fragments.EnterotpFragment.EnterotpFragment"
+        android:label="fragment_enterotp"
+        tools:layout="@layout/fragment_enterotp" >
+
+        <action
+            android:id="@+id/action_enterotpFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sexualOrientationFragment"
+        android:name="com.app.marier.fragments.SexualOrientationFragment.SexualOrientationFragment"
+        android:label="fragment_sexual_orientation"
+        tools:layout="@layout/fragment_sexual_orientation" >
+
+        <action
+            android:id="@+id/action_sexualOrientationFragment_to_addPhotosFragment"
+            app:destination="@id/addPhotosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.app.marier.fragments.SignupFragment.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_self"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_enterotpFragment"
+            app:destination="@id/enterotpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestFragment"
+        android:name="com.app.marier.fragments.InterestFragment.InterestFragment"
+        android:label="fragment_interest"
+        tools:layout="@layout/fragment_interest" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/addPhotosFragment"
+        android:name="com.app.marier.fragments.AddPhotosFragment.AddPhotosFragment"
+        android:label="fragment_add_photos"
+        tools:layout="@layout/fragment_add_photos" >
+        <action
+            android:id="@+id/action_addPhotosFragment_to_interestFragment"
+            app:destination="@id/interestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.app.marier.fragments.LocationFragment.LocationFragment"
+        android:label="LocationFragment" >
+        <action
+            android:id="@+id/action_locationFragment_to_sexualOrientationFragment"
+            app:destination="@id/sexualOrientationFragment" />
+    </fragment>
+</navigation>
